@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scroll_nav_demo</title>
+  </head>
+  <script src="./scroll_nav.js"></script>
+  <link rel="stylesheet" href="./scroll_nav.css" />
+  <body>
+    <!-- 測試:非捲動導航區域(Header)  -->
+    <article
+      class="fullRegion testNavRegion"
+      style="height: 60vh; width: 100%; background-color: #bdc2c2"
+    >
+      (非捲動導航區域)
+    </article>
+
+    <!-- 捲動導航列 -->
+    <nav class="Quick-navigation"></nav>
+    <!-- 捲動導航區域頁面 -->
+    <article class="fullRegion navRegion">
+      1. 使用條件與限制
+      <br />(1) 本元件僅支援PC端。(螢幕寬度小於768px則不顯示導航列) <br />(2)
+      每個導航區域(頁面)高度需要大於螢幕畫面高度60%(60vh),最好是使用滿版背景圖+浮動內容方式。
+    </article>
+    <article class="fullRegion navRegion">
+      2. Github
+      <br />https://github.com/leetnbo/scroll_navigator
+    </article>
+    <article class="fullRegion navRegion">
+      3. 參考案例
+      <br />甲山林市政官邸 https://npm.jsl7.com.tw/
+    </article>
+    <article class="fullRegion navRegion">4</article>
+    <article class="fullRegion navRegion">5</article>
+    <!-- 捲動導航區域頁面(END) -->
+
+    <!-- 測試:非捲動導航區域(Footer)  -->
+    <article
+      class="fullRegion testNavRegion"
+      style="height: 100vh; width: 100%; background-color: #bdc2c2"
+    >
+      (非捲動導航區域)
+    </article>
+  </body>
+
+  <script>
+    scroll_navigator({
+      regionClassName: "navRegion",
+      navigatorClassName: "Quick-navigation",
+      throttleTime: 250,
+    });
+  </script>
+</html>
