@@ -43,7 +43,7 @@ Demo Page: https://leetnbo.github.io/scroll_navigator/
    ```css
    .Quick-navigation {
      position: fixed;
-     display: none;
+     display: flex;
      flex-direction: column;
      z-index: 10;
      right: 60px;
