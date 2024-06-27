@@ -1,7 +1,7 @@
 【網頁捲動導航列】
 ===
 
-隨網頁上、下捲動，切換顯示目前所在頁面(數字編號)  
+隨網頁上、下捲動，切換顯示目前所在頁面區域(數字編號)  
 
 亦可點擊數字編號連結至該頁面  
 
@@ -9,7 +9,7 @@ Demo Page: https://leetnbo.github.io/scroll_navigator/
 
 【使用方式】
 ===
-1. html元素
+> **一、html元素**
    
    (1) **外容器**。預設為body,若body高度已設定為固定100%時，則須要再另行設定一個包覆全體元素且不能設定其高度為100%(vh)的容器類別名稱(className),如".main".
    
@@ -17,10 +17,11 @@ Demo Page: https://leetnbo.github.io/scroll_navigator/
    
    (3) **導航區域**，預設類別名稱為"fullRegion".
    
-   ![image](https://github.com/leetnbo/scroll_nav/assets/146815175/974ee791-d933-43c3-b6aa-5015271e420f)
+   ![image](https://github.com/leetnbo/scroll_navigator/assets/146815175/c66aff0f-8260-4a5b-a3d7-e6b7d64df7ab)
+
 
    
-2. 引入scrollNav.js ，呼叫scroll_navigator()並代入引數，例:
+> **二、引入scrollNav.js ，呼叫scroll_navigator()並代入引數，例:**
    
    ```js
    scroll_navigator({
@@ -36,7 +37,7 @@ Demo Page: https://leetnbo.github.io/scroll_navigator/
     });
    ```   
    
-3. CSS樣式設定參考
+> **三、CSS樣式設定參考**
 
    * 導航列
    ```css
